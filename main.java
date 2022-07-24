@@ -1,14 +1,11 @@
-//Using Array to print marks of 5 subjects and size of the array
+// to find the sum of 5 float values using arrays
 public class main {
     public static void main(String[] args) {
-        int[] marks = { 100, 98, 97, 47, 41 };
-        for (int element : marks) {
-            System.out.println(element);
+        float[] marks = { 99.5f, 85.5f, 82.7f, 95.7f, 90.0f };
+        float sum = 0;
+        for (float element : marks) {
+            sum = sum + element;
         }
-        System.out.println(marks.length);
-        // to print Array in reverse order
-        for (int i = marks.length - 1; i >= 0; i--) {
-            System.out.println(marks[i]);
-        }
+        System.out.println("The value of sum is" + sum);
     }
 }
