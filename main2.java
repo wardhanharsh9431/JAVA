@@ -1,20 +1,12 @@
-// using 2D array
+//using Array find the average marks received
 public class main2 {
     public static void main(String[] args) {
-        int[][] flats;
-        flats = new int[2][3];
-        flats[0][0] = 101;
-        flats[0][1] = 102;
-        flats[0][2] = 103;
-        flats[1][0] = 201;
-        flats[1][1] = 201;
-        flats[1][2] = 202;
-        System.out.println("Printing the 2D array");
-        for (int i = 0; i < flats.length; i++) {
-            for (int j = 0; j < flats[i].length; j++) {
-                System.out.print(flats[i][j]);
-                System.out.print("   ");
-            }
+        float[] marks = { 85.5f, 99.9f, 65.6f, 66.3f, 78.3f };
+        float sum = 0;
+        for (float element : marks) {
+            sum = sum + element;
         }
+        System.out.println("The Average marks received =" + sum / marks.length);
+
     }
 }
